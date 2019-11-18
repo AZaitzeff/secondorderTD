@@ -1,4 +1,4 @@
-Table=1; %simulation from which table in the paper
+Table=3; %simulation from which table in the paper
 
 
 if Table<4

@@ -21,7 +21,8 @@ if Table==2
   kernals{1,2}=kernal1;
 elseif Table==3
     gamma=getgamma2ndorder();
-    kernal1=@(x,y,z,py,zt)(convguass(x,y,z,py,zt)-1/2);
+    [A,~,~]=getconsistvarsTD(gamma,1);
+    kernal1=@(x,y,z,py,zt)(convguass(x,y,z,py,zt/A)-1/2);
     kernals=cell(4,4);
     for i=1:4
         for j=1:4
