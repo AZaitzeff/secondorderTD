@@ -1,0 +1,11 @@
+function [X,Y,pX,pY,Z,h,pd]=initialdata(N,t)
+%lev0 = zeros(N,N,N);
+h=2/N;
+x=-1:h:1-h;
+bx=-1-h:-h:-1-h-9*sqrt(t);
+fx=1:h:1+9*sqrt(t);
+pd=numel(fx);
+px=[bx(pd:-1:1) x fx];
+[X,Y]=meshgrid(x);
+[pX,pY]=meshgrid(px);
+Z = cos(pi*Y).*cos(pi*X)+1/2*cos(pi*Y);
