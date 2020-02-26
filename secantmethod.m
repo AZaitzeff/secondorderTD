@@ -10,12 +10,9 @@ function p=secantmethod(x0,fun)
     %disterror=0;
     for i=1:maxiter
         f1=fun(x1);
-        %disterror=max(disterror,ddist);
         if abs(f1)<tol
             break
         end
-        
-        %disterror=max(disterror,ddist);
         df=(x1-x0)/(f1-f0+me);
         x0=x1;
         f0=f1;
