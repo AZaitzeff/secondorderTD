@@ -5,13 +5,13 @@ if test==1
     double=0;
     T=.5;%time value
     numpts=1001;
-    Ns=[1024,2048,4096];
+    Ns=[512,1024,2048];
     testdumbbell;
 elseif test==2
     double=1;
     T=.5;%time value
     numpts=1001;
-    Ns=[32,64,128,256];
+    Ns=[16,32,64,128];
     testdumbbell;
 elseif test==3
     double=0;
