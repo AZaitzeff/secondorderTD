@@ -16,14 +16,14 @@ elseif test==2
 elseif test==3
     double=0;
     T=.75;%time value
-    numpts=2001;
-    Ns=[4096,8192,8192*2];
+    numpts=1001;
+    Ns=[8192*2];
     testdumbbell;
 else
     double=1;
     T=.75;%time value
-    numpts=2001;
-    Ns=[64,128,256,512];
+    numpts=1001;
+    Ns=[16,32];
     testdumbbell;
 end
 
