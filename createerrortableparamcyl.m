@@ -7,7 +7,7 @@ truer=vars.r;
 truez=vars.z;
 dz=truez(2)-truez(1);
 plot(truez,truer,'k');hold on
-nts=[64,128,256];
+nts=[16,32,64,128,256];
 n=numel(nts);
 error1=zeros(2,n);
 mask=truer>0;
